@@ -1,5 +1,7 @@
+"use client";
 import "./index.scss";
 import Image from "next/image";
+import Typewriter from "typewriter-effect";
 
 export default function Header() {
   return (
@@ -17,7 +19,13 @@ export default function Header() {
                 height="25"
                 alt="chev-left"
               />
-              <p>Available for work</p>
+              <Typewriter
+                options={{
+                  strings: ["Available for work"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
               <Image
                 src="/svg/chevron-right.svg"
                 width="25"
